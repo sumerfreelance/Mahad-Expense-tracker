@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <style>
+    body {
+      background-color: #000000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: center;
+      justify-content: center;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input,
+    select {
+      margin: 5px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #5dede9a7;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #adeff245;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Expense Tracker</h1>
+  <form id="expense-form">
+    <label for="Name">Name:</label>
+    <input type="text" id="description" required><br>
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" step="200" required><br>
+    <label for="category">Category:</label>
+    <select id="category" required>
+      <option value="">Select a category</option>
+      <option value="Food">Food</option>
+      <select name="category">
+        <option value="Transport">Transport</option>
+        <option value="Utilities">Utilities</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Other">Other</option>
+      </select><br>
+      <button type="submit" value="</button>
+    </form>
+
+    <h2>khan</h2>
+    <table id=" expenses-table">
+        <thead>
+          <tr>
+            <th><abbr title="Expense Tracker</abbr></th>
+<th>Amount</th>
+                <<th>Category</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+<h3>List of Expenses: <span id=" total-amount">400</span></h3>
